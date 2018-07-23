@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="warp">
+  <view class='from-row'>
+    <text>用户名</text>
+    <input type="text" bindinput="bindNameInput" id="userName" placeholder="请输入用户名" />
+  </view>
+  <view class='from-row'>
+    <text>密码</text>
+    <input type="text" bindinput="bindPawInput" id="passWord" password="true" placeholder="请输入密码" />
+  </view>
+  <view class='button-submit'>
+    <button  bindtap="login">登录</button>
+  </view>
+  <view class="register">
+    <navigator url="/pages/register/register" hover-class="navigator-hover">注册账号</navigator>
+  </view>
+</view>

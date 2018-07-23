@@ -1,0 +1,38 @@
+<!--pages/register/register.wxml-->
+<view class="warp">
+  <view class='from-row'>
+    <text>用户名</text>
+    <input type="text" bindblur="bindNameInput" id="userName" placeholder="请输入用户名" />
+    <text class='rules'>{{ userNameV }}</text>
+  </view>
+  <view class='from-row'>
+    <text>手机号</text>
+    <input type="text" bindblur="bindPhoneInput" id="phone" placeholder="请输入手机号" />
+    <text class='rules'>{{ phoneV }}</text>
+  </view>
+  <view class='from-row'>
+    <view class='code'><button size='mini' id="send" disabled="{{codeDisabled}}" bindtap="sendCode">{{ send }}</button></view>
+    <input type="text" bindblur="bindCodeInput" id="code" placeholder="请输入验证码" />
+    <text class='rules'>{{ codeV }}</text>
+  </view>
+  <view class='from-row'>
+    <text>密码</text>
+    <input type="text" bindblur="bindPawInput" id="passWord" password="true" placeholder="请输入密码" />
+    <text class='rules'>{{ passWordV }}</text>
+  </view>
+  <view class='from-row'>
+    <input type="text" bindblur="bindPawRigInput" id="pawRight" password="true" placeholder="请再次输入密码" />
+    <text class='rules'>{{ pawRightV }}</text>
+  </view>
+  <view class='from-row'>
+    <text>邮箱</text>
+    <input type="text" bindblur="bindMailInput" id="mail"  placeholder="请输入邮箱" />
+    <text class='rules'>{{ mailV }}</text>
+  </view>
+  <view class='button-submit'>
+    <button  bindtap="register">注册</button>
+  </view>
+  <view class="login">
+    <navigator url="/pages/login/login" hover-class="navigator-hover">已有账号</navigator>
+  </view>
+</view>

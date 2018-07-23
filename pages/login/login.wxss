@@ -1,0 +1,24 @@
+/* pages/login/login.wxss */
+.from-row {
+  margin: 20rpx 0;
+  font-size: 14px;
+}
+.from-row input {
+  padding: 15rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.button-submit button {
+  background: #726DD1;
+  color:#fff;
+  height:80rpx;
+  font-size:14px;
+  line-height:80rpx;
+}
+.register {
+  position: absolute;
+  bottom: 50rpx;
+  font-size: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+}

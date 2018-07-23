@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#726DD1",
+    "navigationBarTitleText": "HeiDi's item",
+    "navigationBarTextStyle":"#fff"
+  }
+}

@@ -1,0 +1,42 @@
+/* pages/register/register.wxss */
+.from-row {
+  padding-bottom: 45rpx;
+  margin-top: 5rpx;
+  font-size: 14px;
+  position: relative;
+}
+.from-row input {
+  padding: 15rpx 0 10rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.button-submit button {
+  background: #726DD1;
+  color:#fff;
+  height:80rpx;
+  font-size:14px;
+  line-height:80rpx;
+}
+.login {
+  position: absolute;
+  bottom: 50rpx;
+  font-size: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+}
+.code {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+.code button {
+  color: #fff;
+  background-color: #726DD1;
+}
+.rules{
+  font-size: 12px;
+  padding-top: 5rpx;
+  color: red;
+  position: absolute;
+  bottom: 0;
+}
