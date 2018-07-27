@@ -1,0 +1,37 @@
+<!--pages/wallet/wallet.wxml-->
+<view class='wallet-head'>
+  <view class='wallet-title'>
+    <text>钱包余额</text>
+    <view>120</view>
+  </view>
+  <view>
+    <button class='weui-btn weui-btn_mini btn-money'  bindtap="pushMoney">充值</button>
+    <button class='weui-btn weui-btn_mini btn-money'  bindtap="pullMoney">提现</button>
+  </view>
+</view>
+<view class='wallet-nav'>
+  <view class="wallet-nav-btn {{currTab=='first' ? 'active' : ''}}" id="first" bindtap="onNavTap">收入</view>
+  <view class="wallet-nav-btn {{currTab=='second' ? 'active' : ''}}" id="second" bindtap="onNavTap">支出</view>
+</view>
+<!--收入  -->
+<view class="weui-media-box {{currTab=='second' ? 'hidden' : ''}}" wx:key="index" wx:for="{{income}}">
+  <view class='wallet-list'>
+    <view class="weui-media-box__title">{{item.title}}</view>
+    <view class="weui-media-box__title font-color">+{{item.money}}</view>
+  </view>
+  <view class='wallet-list'>
+    <view class="weui-media-box__info">{{item.time}}</view>
+    <view class="weui-media-box__info">{{item.status}}</view>
+  </view>
+</view>
+<!--支出  -->
+<view class="weui-media-box  {{currTab=='first' ? 'hidden' : ''}}" wx:for="{{paid}}" wx:key="index">
+  <view class='wallet-list'>
+    <view class="weui-media-box__title">{{item.title}}</view>
+    <view class="weui-media-box__title font-color">-{{item.money}}</view>
+  </view>
+  <view class='wallet-list'>
+    <view class="weui-media-box__info">{{item.time}}</view>
+    <view class="weui-media-box__info">{{item.status}}</view>
+  </view>
+</view>

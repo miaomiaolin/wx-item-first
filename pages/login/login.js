@@ -33,7 +33,7 @@ Page({
       })
     }else {
       wx.request({
-        url: '你的API', 
+        url: 'https://www.fanhantech.com/api/login', 
         data: {
           username: uName,
           password: md5(paw)

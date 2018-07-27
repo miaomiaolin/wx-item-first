@@ -37,7 +37,7 @@ Page({
       changeCon = "字母开头，只能包含字母、数字、横线及下划线"
     } else {
       wx.request({
-        url: '你的API' + val,
+        url: 'https://www.fanhantech.com/api/account/username?username=' + val,
         header: {
           'content-type': 'application/json' // 默认值
         },
@@ -141,7 +141,7 @@ Page({
     }else {
       let num = 60;
       wx.request({
-        url: '你的API',
+        url: 'https://www.fanhantech.com/api/account/smsverificationcode',
         data: {
           countryCode: '86',
           mobile: this.data.phone
@@ -203,7 +203,7 @@ Page({
         return
       }else {
         wx.request({
-          url: '你的API',
+          url: 'https://www.fanhantech.com/api/register',
           data: {
             Username: userName,
             CountryCode: "+86", // todo 目前只支持+86

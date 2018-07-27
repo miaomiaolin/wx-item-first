@@ -8,7 +8,7 @@
   border-bottom: 1px solid #eee;
 }
 .button-submit button {
-  background: #726DD1;
+  background: #337ab7;
   color:#fff;
   height:80rpx;
   font-size:14px;
